@@ -1,6 +1,8 @@
 //Create the log in screen for the website 
 'use strict';
 
+const e = React.createElement;
+
 class loginContainer extends React.Component{
     constructor(props){
         super(props);
@@ -25,3 +27,6 @@ const Buttons = (props) =>{
         />
     );
 } 
+
+const domContainer = document.querySelector('#viewContainer');
+ReactDOM.render(e(loginContainer), domContainer);
